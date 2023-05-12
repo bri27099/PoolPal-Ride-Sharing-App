@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".OfferRide">
+
+    <TextView
+        android:id="@+id/sourceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Source:"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/sourceEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sourceTextView"
+        android:hint="Enter source location"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/destinationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sourceEditText"
+        android:layout_marginTop="16dp"
+        android:text="Destination:"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/destinationEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/destinationTextView"
+        android:hint="Enter destination location"
+        android:inputType="text" />
+
+
+
+    <TextView
+        android:id="@+id/dateTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/destinationEditText"
+        android:layout_marginTop="16dp"
+        android:hint="Select date"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:id="@+id/genderToggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dateTextView"
+        android:layout_marginTop="16dp"
+        android:text="Same Gender: OFF" />
+
+    <Button
+        android:id="@+id/createRideButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/genderToggleButton"
+        android:layout_marginTop="24dp"
+        android:text="Create Ride" />
+
+    <TextView
+        android:id="@+id/estimatedTimeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/createRideButton"
+        android:layout_marginTop="24dp"
+        android:text="Estimated Time: "
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/estimatedCostTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/estimatedTimeTextView"
+        android:layout_marginTop="16dp"
+        android:text="Estimated Cost: "
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
